@@ -1,0 +1,36 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    container_name: LRUwebapp
+
+    ports:
+      - "8000:8000"
+    restart: on-failure
+    networks:
+      - LRU-network
+    # depends_on:
+    #   - fusion-ai-db
+    # env_file:
+    #   - .env
+    #   - ./fusion-ai-cloud-user-service/.env
+
+  frontend:
+    build:
+      context: ./frontend  
+    container_name: LRU-frontend
+
+    ports:
+      - "3000:3000"
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: changemedatabase
+      POSTGRES_USER: changeme
+      POSTGRES_PASSWORD: changeme
+
+networks:
+  LRU-network:
+    driver: bridge
+    name: LRU-network
