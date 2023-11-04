@@ -9,14 +9,7 @@ move inside the folder
 cd LRUwebapp
 ```
 
-## prerequisite
-```
-docker should be setup already
-or you have to run each server seperately-> for this see at last.
-```
-
-
-## How to run 
+## Run using docker
 ```
 # to build the docker services
 docker compose build
