@@ -1,11 +1,10 @@
 # LRU WEBAPP
-## 1st step
-Clone the repo
-```
+## Clone the Repository
+```bash
 git clone https://github.com/mridul217/LRUwebapp
-```
-move inside the folder 
-```
+
+# move inside the folder 
+
 cd LRUwebapp
 ```
 
