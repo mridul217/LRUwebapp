@@ -9,7 +9,7 @@ cd LRUwebapp
 ```
 
 ## Run using docker
-```
+```bash
 # to build the docker services
 docker compose build
 
@@ -22,14 +22,14 @@ docker compose down
 ## Run without using Docker
 
 ### run the backend server
-```
+```bash
 cd backend
 uvicorn main:app --reload
 
 # backend server will start on localhost:8000
 ```
 ### run the frontend server
-```
+```bash
 cd frontend # one should be present in root directory
 npm start
 
