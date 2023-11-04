@@ -26,13 +26,15 @@ docker compose down
 ```
 cd backend
 uvicorn main:app --reload
-# localhost:8000
+
+# backend server will start on localhost:8000
 ```
 ### run the frontend server
 ```
 cd frontend # one should be present in root directory
 npm start
-#localhost:3000
+
+# frontend server will start on localhost:3000
 ```
 
 ## Screens of the react app
